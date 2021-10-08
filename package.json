@@ -1,0 +1,20 @@
+{
+  "name": "@ikenaga-keiei/renovate-config",
+  "version": "0.1.0",
+  "renovate-config": {
+    "dev": {
+      "extends": [
+        "config:base"
+      ],
+      "schedule": "before 1pm on Monday",
+      "packageRules": [
+        {
+          "matchDepTypes": [
+            "devDependencies"
+          ],
+          "automerge": true
+        }
+      ]
+    }
+  }
+}
